@@ -1,6 +1,6 @@
 export default {
-  search: async function (searchTerm, searchLimit, sort) {
-    return await fetch(
+  search: function (searchTerm, searchLimit, sort) {
+    return fetch(
       `http://www.reddit.com/search.json?q=${searchTerm}&sort=${sort}&limit=${searchLimit}`
     )
       .then((res) => res.json())

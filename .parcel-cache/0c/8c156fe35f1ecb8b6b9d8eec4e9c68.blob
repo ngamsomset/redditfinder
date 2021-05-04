@@ -1,0 +1,15 @@
+const searchForm = document.getElementById('search-form')
+const searchBtn = document.getElementById('search-btn')
+const searchInput = document.getElementById('search-input')
+
+searchForm.addEventListener('submit', (e) => {
+  // Need search input here and limits
+  const searchTerm = searchInput.value
+  const sort = document.querySelector('input[name="sortby"]:checked').value
+  console.log(sort)
+
+  //   Get limit
+  const searchLimit = document.getElementById('limit').value
+  console.log(searchLimit)
+  e.preventDefault()
+})

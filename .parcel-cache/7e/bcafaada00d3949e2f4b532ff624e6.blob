@@ -1,0 +1,40 @@
+const searchForm = document.getElementById('search-form')
+const searchBtn = document.getElementById('search-btn')
+const searchInput = document.getElementById('search-input')
+
+// Form Event Listener
+searchForm.addEventListener('submit', (e) => {
+  // Need search input here and limits
+  const searchTerm = searchInput.value
+  const sort = document.querySelector('input[name="sortby"]:checked').value
+
+  //   Get limit value
+  const searchLimit = document.getElementById('limit').value
+
+  // Form validation
+
+  if (searchTerm === '') {
+    // Show message
+    showMessage('Please add the keywords', 'alert-danger')
+  }
+
+  e.preventDefault()
+})
+
+//  showMessage
+function showMessage(message, className) {
+  // Create div with the message and add class to it
+  const div = document.createElement('div')
+  div.className = `alert ${className}`
+  div.appendChild(document.createTextNode(message))
+  // Get the elements that we want to insert in between.
+  const searchContainer = document.getElementById('search-container')
+  const search = document.getElementById('search')
+
+  // Insert
+  searchContainer.insertBefore(div, search)
+
+  setTimeout(() => {
+    document.querySelector('.alert').remove()
+  }, 1000)
+}

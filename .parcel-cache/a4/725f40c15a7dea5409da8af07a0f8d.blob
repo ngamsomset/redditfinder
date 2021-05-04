@@ -1,0 +1,11 @@
+const searchForm = document.getElementById('search-form')
+const searchBtn = document.getElementById('search-btn')
+const searchInput = document.getElementById('search-input')
+
+searchForm.addEventListener('submit', (e) => {
+  // Need search input here and limits
+  const searchForm = searchInput.value
+  const sort = document.querySelector('input[name="sortby"]:checked')
+  console.log(sort)
+  e.preventDefault()
+})

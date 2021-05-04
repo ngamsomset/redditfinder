@@ -1,0 +1,9 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+exports.default = {
+  search: function (searchTerm, searchLimit, sort) {
+    return fetch(`http://www.reddit.com/search.json?q=${searchTerm}&sort=${sort}&limit=${searchLimit}`).then(res => res.json()).then(data => data.data.children.map(data => {
+      data.data;
+    }));
+  }
+};

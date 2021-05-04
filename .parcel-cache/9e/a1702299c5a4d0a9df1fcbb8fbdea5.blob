@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Reddit Finder</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-info mb-4">
+        <div class="container">
+            <span class="navbar-brand">Reddit Finder</span>
+        </div>
+    </nav>
+
+    <script src="/index.HASH_REF_62d5dab885897b04655082d4fd532818.js"></script>
+</body>
+
+</html>
